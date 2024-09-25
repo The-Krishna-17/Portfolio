@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- stylesheet link  -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- fontawesomelink -->
+    <script src="https://kit.fontawesome.com/40439e5339.js" crossorigin="anonymous"></script>
+    <!-- font link  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-white">
+     <header>
+    <!-- navigation bar -->
+        <nav>
+            <!-- navigation bar for medium and big screen screen -->
+            <div class="sm:flex justify-between items-center font-montserrat p-4 bg-primary text-secondary mt-3  ml-14 mr-14 rounded-xl hidden md:text-xl">
+                <h2>KD</h2>
+                <ul class="flex space-x-5 ">
+                    <a href="#home" class="hover:text-white transition duration-500"><li>Home</li></a>
+                    <a href="#about" class="hover:text-white transition duration-500"><li>About</li></a>
+                    <a href="#projects" class="hover:text-white transition duration-500"><li>Projects</li></a>
+                    <a href="#contact" class="hover:text-white transition duration-500"> <li>Contact</li></a>
+                    <a href="#resume" class="hover:text-white transition duration-500"><li>Resume</li></a>                  
+                </ul>
+            </div>
+            <!-- navigation bar for small screen  -->
+            <div class="flex justify-between items-center font-montserrat p-4 bg-primary text-secondary mt-3 ml-3 mr-3 rounded-xl sm:hidden">
+                <h2>KD</h2>
+                <button id = "menu-btn">
+                    <i id = "menu-icon" class = "fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <!-- Hidden list of items -->
+            <ul id="menu-list" class="hidden bg-primary text-secondary pl-4 p-2 rounded-xl font-montserrat mt-2 pb-0 ml-3 mr-3  cursor-pointer">
+                <a href="#home" class="p-1 hover:text-white transition duration-500"><li>Home</li></a>
+                <a href="#about" class="p-1 hover:text-white transition duration-500"><li>About</li></a>
+                <a href="#projects" class="p-1 hover:text-white  transition duration-500"><li>Projects</li></a>
+                <a href="#contact" class="p-1 hover:text-white  transition duration-500"> <li>Contact</li></a>
+                <a href="#resume" class="p-1 hover:text-white transition duration-500"><li>Resume</li></a>     
+            </ul>
+        </nav>
+     </header>
+     <main>
+
+        <!-- Hero Section  -->
+        <section id="home" class="bg-primary mt-3 ml-3 mr-3 sm:ml-14 sm:mr-14 flex flex-col justify-between rounded-xl sm:w-auto sm:p-10 sm:h-[22rem] md:h-[31rem]">
+            <div class="flex justify-between w-full">
+                <h2 class="font-montserrat font-bold text-xl md:text-3xl text-secondary p-3 ">
+                    Hi, I am Krishna Dhami<br> 
+                    <span class="font-light text-sm md:text-2xl">A Front-End Deveoper</span>
+                    <span id="my-text" class="sm:block hidden  text-secondary ml-10 mt-10 font-ro sm:text-sm md:text-3xl font-bold">" Crafting Seamless Web Experiences with Precision and Passion. "</span>
+                </h2> 
+                <img src="my-image-removebg.png" alt="My Image" class="w-44 shadow-2xl sm:rounded-full md:rounded-none md:h-80 md:w-auto md:shadow-none ">
+            </div>
+            <!-- Visualize, Craft, Implement -->
+            <div class="sm:flex justify-between items-center text-secondary font-montserrat w-full p-4 sm:relative hidden md:top-7">
+                <div class="flex flex-col justify-center gap-2 items-center bg-white border-secondary border-2 p-2 w-[26%] md:h-auto rounded-xl ml-5 shadow-secondary shadow-lg">
+                    <i class="fa-solid fa-eye"></i>
+                    <h3 class="text-lg font-bold">Visualize</h3>
+                    <p class="text-sm text-center hidden md:flex">" Conceptualize your project's structure and flow. "</p>
+                </div>                
+                <div class="flex flex-col justify-center gap-2 items-center bg-white border-secondary border-2 p-2 w-[26%] md:h-auto rounded-xl ml-5 shadow-secondary shadow-lg">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3 class="text-lg font-bold">Craft</h3>
+                    <p class="text-sm text-center hidden md:flex">" Develop robust, scalable solutions with precision. "</p>
+                </div>                
+                <div class="flex flex-col justify-center gap-2 items-center bg-white border-secondary border-2 p-2 w-[26%] md:h-auto rounded-xl ml-5 shadow-secondary shadow-lg">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3 class="text-lg font-bold ">Implement</h3>
+                    <p class="text-sm text-center hidden md:flex">" Deploy and integrate seamlessly into production. "</p>
+                </div> 
+            </div>
+        </section>
+        <!-- About Section for medium and small screen -->
+         <section id="about" class="bg-primary mt-3 mb-3 ml-3 mr-3 sm:ml-14 sm:mr-14 rounded-xl md:mt-14">
+            <!-- About heading -->
+            <div class="flex justify-around md:justify-evenly items-center p-1 md:p-4 md:text-3xl">
+                <i class="fa-solid fa-circle-minus text-secondary"></i>
+                <h2 class="text-xl font-bold font-montserrat text-secondary md:text-3xl">About Me</h2>
+                <i class="fa-solid fa-circle-minus text-secondary"></i>
+            </div>
+            <hr>
+            <!-- Introduction -->
+             <div class="flex p-4">
+                <img src="mirror image.png" alt="My image" class="h-36 w-36 md:w-52 md:h-52 object-cover p-1 object-top border-4 border-secondary bg-white rounded-full mt-4 mr-2" >
+                <div>
+                    <h2 class="font-montserrat ml-4 text-secondary p-2 pb-1 md:text-lg">Introduction <i class="fa-solid fa-user ml-2"></i></h2>
+                    <p class="font-montserrat text-sm p-2 pt-0 text-justify hyphens-auto md:hidden"> Hi, I'm Krishna Dhami, a frontend developer focused on crafting clean, responsive websites. I excel in HTML, CSS, and JavaScript, and I'm passionate about creating seamless user experiences. Let's build something great together!</p>
+                    <p class="font-montserrat ml-4 p-2 pt-0 text-justify hyphens-auto md:flex md:text-lg hidden"> Hi, I'm Krishna Dhami, a frontend developer focused on crafting clean, responsive websites.  I excel in HTML, CSS, and JavaScript, and I'm passionate about creating seamless user experiences.</p>
+                    <p id="my-second-text" class="font-montserrat font-thin text-secondary text-2xl  p-2 pt-0 text-justify hyphens-auto md:flex hidden mt-6 ml-4"> Let's build something great together!</p>
+                </div>
+             </div>
+             <hr>
+             <!-- Educational section -->
+              <div class="p-4">
+                <!-- Educational heading  -->
+                <div class="flex gap-2 items-center">
+                    <h2 class="font-montserrat text-secondary text-sm md:p-2 md:text-lg">Educational Background</h2>
+                    <i class="fa-solid fa-graduation-cap text-secondary md:text-lg"></i>
+                 </div>
+                 <!-- Educational Background -->
+                  <div class="sm:flex sm:justify-between">
+                    <div class="md:p-2 pt-0 font-montserrat text-sm md:text-lg">
+                       <h2 class="font-bold">SEE (2021)</h2>
+                       <a href="https://kmebs.edu.np/" class="cursor-pointer p-2" target="_blank">Khadga Memorial English Boarding school <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                       <p class="p-2">Tikapur, Kailali</p>
+                       <h2 class="font-bold">SLC (2023)</h2>
+                       <a href="https://rme.edu.np/" class="cursor-pointer p-2" target="_blank">Radiant Montessori English School <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                       <p class="p-2">Tikapur, Kailali</p>
+                       <h2 class="font-bold">Bachelor (Expected Graduation Year : 2026)</h2>
+                       <a href="https://techspire.edu.np/" class="cursor-pointer p-2" target="_blank">Techspire College <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                       <p class="p-2">Baheshowr, Kathmandu</p>
+                    </div>
+                    <!-- image used on educationl backgroud section -->
+                    <div class="w-[35%] p-3 pt-0 md:mr-36 md:-mt-5">
+                        <img src="education.webp" alt="Image" class="rounded-full hidden sm:flex shadow-secondary shadow-xl">
+                    </div>
+                  </div>
+
+              </div>
+              <hr>
+              <!-- Skills heading styling-->
+              <div class="flex items-center gap-1 p-2 md:ml-4 md:text-lg">
+                <i class="fa-solid fa-star text-secondary "></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+                <h2 class="font-montserrat text-secondary text-sm p-2 md:text-lg">Skills</h2>
+                <i class="fa-solid fa-star text-secondary"></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+              </div>
+              <div>
+                <!-- styling -->
+                <div class="font-montserrat text-secondary flex flex-col p-2 pt-0">
+                    <!-- skill: html styling -->
+                    <div class="flex items-center gap-3 ">
+                        <i class="fa-brands fa-html5 text-4xl md:ml-4"></i>
+                        <div class="relative sm:w-[70%] md:w-2/5 w-full bg-white rounded-full h-4">
+                            <div class="absolute top-0 left-0 h-full rounded-full bg-secondary w-[80%] text-white flex justify-between items-center font-bold font-montserrat text-sm p-1">
+                              <p>HTML</p> <p>80%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skill: css styling -->
+                    <div class="flex gap-3 items-center">
+                        <i class="fa-brands fa-css3-alt text-4xl md:ml-4"></i>
+                        <div class="relative sm:w-[70%] md:w-2/5 w-full bg-white rounded-full h-4">
+                            <div class="absolute top-0 left-0 h-full rounded-full bg-secondary  w-[75%] text-white flex justify-between items-center font-bold font-montserrat text-sm p-1">
+                              <p>CSS</p> <p>75%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skill: js styling -->
+                    <div class="flex gap-3 items-center">
+                        <i class="fa-brands fa-js text-3xl md:ml-4"></i>
+                        <div class="relative sm:w-[70%] md:w-2/5 w-full bg-white rounded-full h-4">
+                            <div class="absolute top-0 left-0 h-full rounded-full bg-secondary w-[50%] text-white flex justify-between items-center font-bold font-montserrat text-sm p-1">
+                              <p>JS</p> <p>50%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <hr>
+              <!-- Achivements section  -->
+               <div class="p-2">
+                <!-- Achivements heading  -->
+                    <div class="flex gap-2 items-center">
+                        <h2 class="font-montserrat text-secondary text-sm md:ml-4 md:text-lg">Achivements</h2>
+                        <i class="fa-solid fa-award text-secondary"></i>
+                     </div>
+                     <!-- all Achivements -->
+                     <div class=" p-4 pt-2">
+                         <!-- Achivements 1 and 2-->
+                        <div class="flex gap-2 ">
+                            <!-- Achievement 1 -->
+                            <div class="w-[48%] bg-gray-50 rounded-xl p-3 md:p-9 shadow-2xl cursor-pointer">
+                                <img src="python master.png" alt="Certificate" class="border border-secondary rounded-lg md:brightness-90">
+                                <h2 class="font-montserrat font-bold">Python Master</h2>
+                                <div class="flex justify-center items-center gap-2 font-montserrat">
+                                    <p class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary">
+                                        <i class="fa-regular fa-hand-pointer"></i> Know More...
+                                    </p>
+                                </div>
+                                <p class="description hidden text-[14px] bg-secondary text-white p-3 m-2 rounded-xl md:text-xl md:font-thin">"Certified in Python Mastery from Programiz, showcasing proficiency in Python programming and hands-on project experience."</p>
+                            </div>
+                            <!-- Achievement 2 -->
+                            <div class="w-[49%] bg-white rounded-xl p-3 md:p-9 shadow-2xl cursor-pointer">
+                                <img src="python interview question.png" alt="Certificate" class="border border-secondary rounded-lg md:brightness-90">
+                                <h2 class="font-montserrat font-bold">Python Interview Question</h2>
+                                <div class="flex justify-center items-center gap-2 font-montserrat">
+                                    <p class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary">
+                                        <i class="fa-regular fa-hand-pointer"></i> Know More...
+                                    </p>
+                                </div>
+                                <p class="description hidden text-[14px] bg-secondary text-white p-3 m-2 rounded-xl md:text-xl md:font-thin">"Familiar with Python interview questions, covering topics like data structures, algorithms, OOP, and error handling."</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Achievements 3 and 4-->
+                        <div class="flex gap-2 mt-2">
+                            <!-- Achievement 3 -->
+                            <div class="w-[48%] bg-white rounded-xl p-3 md:p-9 shadow-2xl cursor-pointer">
+                                <img src="SQL basics.png" alt="Certificate" class="border border-secondary rounded-lg md:brightness-90">
+                                <h2 class="font-montserrat font-bold">SQL Basics</h2>
+                                <div class="flex justify-center items-center gap-2 font-montserrat">
+                                    <p class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary">
+                                        <i class="fa-regular fa-hand-pointer"></i> Know More...
+                                    </p>
+                                </div>
+                                <p class="description hidden text-[14px] bg-secondary text-white p-3 m-2 rounded-xl md:text-xl md:font-thin">"Proficient in SQL basics, including queries, joins, data manipulation, and database management techniques."</p>
+                            </div>
+                            <!-- Achievement 4 -->
+                            <div class="w-[49%] bg-white rounded-xl p-3 md:p-9 shadow-2xl cursor-pointer">
+                               <img src="python beyond basics.png" alt="Certificate" class="border border-secondary rounded-lg md:brightness-90">
+                               <h2 class="font-montserrat font-bold">HTML, CSS and JS</h2>
+                               <div class="flex justify-center items-center gap-2 font-montserrat">
+                                   <p class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary">
+                                       <i class="fa-regular fa-hand-pointer"></i> Know More...
+                                   </p>
+                               </div>
+                               <p class="description hidden text-[14px] bg-secondary text-white p-3 m-2 rounded-xl md:text-xl md:font-thin">"I have learned HTML, CSS, and JavaScript from platforms like Programiz and W3Schools. By watching YouTube tutorials, I applied this knowledge to real-world projects, gaining hands-on experience in web development."</p>
+                           </div>
+                        </div>
+                     </div>
+         </section>
+         
+         <!-- Project Section -->
+         <section id="projects" class="bg-primary mt-3 ml-3 mr-3 sm:ml-14 sm:mr-14 rounded-xl p-2 mb-3">
+            <!-- About heading -->
+            <div class="flex justify-around md:justify-evenly items-center p-1 md:p-4 md:text-3xl">
+                <i class="fa-solid fa-circle-minus text-secondary"></i>
+                <h2 class="text-xl font-bold font-montserrat text-secondary md:text-3xl">Projects</h2>
+                <i class="fa-solid fa-circle-minus text-secondary"></i>
+            </div>
+            <hr>
+            <!-- Projects list -->
+             <!-- project 1 for small screen-->
+             <div class="w-[full] p-2 mt-2 bg-white font-montserrat flex flex-col justify-center items-center rounded-2xl sm:hidden">
+                <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 1 Title</h2>
+                <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                    <i class="fa-regular fa-eye"></i>
+                    Project Description...
+                </h2>
+                <p class="hidden project-description">Small description</p>
+                <a href="#" class="w-1/2 bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5">
+                    <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+             </div>
+             <!-- project 1 for medium screen-->
+             <div class="hidden w-[full] p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col md:hidden">
+                <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 1 Title</h2>
+                <div class="flex mt-2">
+                    <div class="flex flex-col w-1/2  h-44 space-y-3 mr-2 ml-8">
+                        <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                            <i class="fa-regular fa-eye"></i>
+                            Project Description...
+                        </h2>
+                        <p class="hidden project-description">Small description</p>
+                        <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                            <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <div class="flex flex-col w-[60%]  items-end justify-center">
+                        <img src="project-1.webp" alt="project 1" class="w-10/12 border-4 shadow-lg">
+                    </div>
+                </div>
+             </div>
+              <!-- project 2 for small screen-->
+              <div class="w-[full] p-2 mt-2 bg-white font-montserrat flex flex-col justify-center items-center rounded-2xl sm:hidden">
+                <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 2 Title</h2>
+                <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                    <i class="fa-regular fa-eye"></i>
+                    Project Description...
+                </h2>
+                <p class="hidden project-description">Small description</p>
+                <a href="#" class="w-1/2 bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 sm:w-[30%]">
+                    <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+             </div>
+            <!-- project 2 for medium screen-->
+             <div class="hidden w-[full] p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col md:hidden">
+               <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 2 Title</h2>
+               <div class="flex mt-2">
+                   <div class="flex flex-col w-1/2  h-44 space-y-3 mr-2 ml-8">
+                       <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                           <i class="fa-regular fa-eye"></i>
+                           Project Description...
+                       </h2>
+                       <p class="hidden project-description">Small description</p>
+                       <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                           <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                       </a>
+                   </div>
+                   <div class="flex flex-col w-[60%]  items-end justify-center">
+                       <img src="project-2.png" alt="project 2" class="w-10/12 border-4 shadow-lg">
+                   </div>
+               </div>
+            </div>
+             <!-- project 3 for small screen -->
+             <div class="w-[full] p-2 mt-2 bg-white font-montserrat flex flex-col justify-center items-center rounded-2xl sm:hidden">
+                <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 3 Title</h2>
+                <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                    <i class="fa-regular fa-eye"></i>
+                    Project Description...
+                </h2>
+                <p class="hidden project-description">Small description</p>
+                <a href="#" class="w-1/2 bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 sm:w-[30%]">
+                    <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+             </div>
+             <!-- project 3 for medium screen-->
+             <div class="hidden w-[full] p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col md:hidden">
+                <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 3 Title</h2>
+                <div class="flex mt-2">
+                    <div class="flex flex-col w-1/2  h-44 space-y-3 mr-2 ml-8">
+                        <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                            <i class="fa-regular fa-eye"></i>
+                            Project Description...
+                        </h2>
+                        <p class="hidden project-description">Small description</p>
+                        <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                            <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <div class="flex flex-col w-[60%]  items-end justify-center">
+                        <img src="project-3.webp" alt="project 3" class="w-10/12 border-4 shadow-lg">
+                    </div>
+                </div>
+             </div>
+             <!-- project 4  for small screen-->
+             <div class="w-[full] p-2 mt-2 bg-white font-montserrat flex flex-col justify-center items-center rounded-2xl sm:hidden">
+               <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 4 Title</h2>
+               <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                   <i class="fa-regular fa-eye"></i>
+                   Project Description...
+               </h2>
+               <p class="hidden project-description">Small description</p>
+               <a href="#" class="w-1/2 bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 sm:w-[30%]">
+                   <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+               </a>
+            </div>
+            <!-- project 4 for medium screen-->
+            <div class="hidden w-[full] p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col md:hidden">
+               <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 4 Title</h2>
+               <div class="flex mt-2">
+                   <div class="flex flex-col w-1/2  h-44 space-y-3 mr-2 ml-8">
+                       <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                           <i class="fa-regular fa-eye"></i>
+                           Project Description...
+                       </h2>
+                       <p class="hidden project-description">Small description</p>
+                       <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                           <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                       </a>
+                   </div>
+                   <div class="flex flex-col w-[60%]  items-end justify-center">
+                       <img src="project-4.webp" alt="project 4" class="w-10/12 border-4 shadow-lg">
+                   </div>
+               </div>
+            </div>
+             <!-- project 5 for small screen-->
+             <div class="w-[full] p-2 mt-2 bg-white font-montserrat flex flex-col justify-center items-center rounded-2xl sm:hidden">
+                <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 5 Title</h2>
+                <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                    <i class="fa-regular fa-eye"></i>
+                    Project Description...
+                </h2>
+                <p class="hidden project-description">Small description</p>
+                <a href="#" class="w-1/2 bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 sm:w-[30%]">
+                    <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+             </div>
+             <!-- project 5 for medium screen-->
+             <div class="hidden w-[full] p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col md:hidden">
+               <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 5 Title</h2>
+               <div class="flex mt-2">
+                   <div class="flex flex-col w-1/2  h-44 space-y-3 mr-2 ml-8">
+                       <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                           <i class="fa-regular fa-eye"></i>
+                           Project Description...
+                       </h2>
+                       <p class="hidden project-description">Small description</p>
+                       <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                           <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                       </a>
+                   </div>
+                   <div class="flex flex-col w-[60%]  items-end justify-center">
+                       <img src="project-5.webp" alt="project 5" class="w-10/12 border-4 shadow-lg">
+                   </div>
+               </div>
+            </div>
+              <!-- project 6 for small screen-->
+              <div class="w-[full] p-2 mt-2 bg-white font-montserrat flex flex-col justify-center items-center rounded-2xl sm:hidden">
+                <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 6 Title</h2>
+                <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                    <i class="fa-regular fa-eye"></i>
+                    Project Description...
+                </h2>
+                <p class="hidden project-description">Small description</p>
+                <a href="#" class="w-1/2 bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 sm:w-[30%]">
+                    <i class="fa-brands fa-github mr-1 "></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            <!-- project 6 for medium screen-->
+            <div class="hidden w-[full] p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col md:hidden">
+               <h2 class="bg-primary text-center p-2  text-lg w-full rounded-xl text-secondary">Project 6 Title</h2>
+               <div class="flex mt-2">
+                   <div class="flex flex-col w-1/2  h-44 space-y-3 mr-2 ml-8">
+                       <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn"> 
+                           <i class="fa-regular fa-eye"></i>
+                           Project Description...
+                       </h2>
+                       <p class="hidden project-description">Small description</p>
+                       <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                           <i class="fa-brands fa-github mr-1"></i>Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                       </a>
+                   </div>
+                   <div class="flex flex-col w-[60%]  items-end justify-center">
+                       <img src="project-6.png" alt="project 6" class="w-10/12 border-4 shadow-lg">
+                   </div>
+               </div>
+            </div>
+            <!-- for big screen -->
+            <div class="hidden md:flex flex-col">
+                <!-- project 1 and 2 for big screen -->
+                <div class="flex justify-between gap-3 p-4 pb-2">
+                  <div class="w-full p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col flex-1">
+                    <h2 class="bg-primary text-center p-2 text-lg w-full rounded-xl text-secondary">Project 1 Title</h2>
+                    <div class="flex mt-2">
+                      <div class="flex flex-col w-1/2 h-44 space-y-3 mr-2 ml-8">
+                        <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn">
+                          <i class="fa-regular fa-eye"></i> Project Description...
+                        </h1>
+                        <p class="hidden project-description">Small description</p>
+                        <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                          <i class="fa-brands fa-github mr-1"></i> Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                      <div class="flex flex-col w-[60%] items-end justify-center">
+                        <img src="project-1.webp" alt="project 1" class="w-10/12 border-4 shadow-lg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col flex-1">
+                    <h2 class="bg-primary text-center p-2 text-lg w-full rounded-xl text-secondary">Project 2 Title</h2>
+                    <div class="flex mt-2">
+                      <div class="flex flex-col w-1/2 h-44 space-y-3 mr-2 ml-8">
+                        <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn">
+                          <i class="fa-regular fa-eye"></i> Project Description...
+                        </h1>
+                        <p class="hidden project-description">Small description</p>
+                        <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                          <i class="fa-brands fa-github mr-1"></i> Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                      <div class="flex flex-col w-[60%] items-end justify-center">
+                        <img src="project-2.png" alt="project 2" class="w-10/12 border-4 shadow-lg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- project 3 and 4 for big screen -->
+                <div class="flex justify-between gap-3 p-4 pb-2">
+                  <div class="w-full p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col flex-1">
+                    <h2 class="bg-primary text-center p-2 text-lg w-full rounded-xl text-secondary">Project 3 Title</h2>
+                    <div class="flex mt-2">
+                      <div class="flex flex-col w-1/2 h-44 space-y-3 mr-2 ml-8">
+                        <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn">
+                          <i class="fa-regular fa-eye"></i> Project Description...
+                        </h1>
+                        <p class="hidden project-description">Small description</p>
+                        <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                          <i class="fa-brands fa-github mr-1"></i> Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                      <div class="flex flex-col w-[60%] items-end justify-center">
+                        <img src="project-3.webp" alt="project 3" class="w-10/12 border-4 shadow-lg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col flex-1">
+                    <h2 class="bg-primary text-center p-2 text-lg w-full rounded-xl text-secondary">Project 4 Title</h2>
+                    <div class="flex mt-2">
+                      <div class="flex flex-col w-1/2 h-44 space-y-3 mr-2 ml-8">
+                        <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn">
+                          <i class="fa-regular fa-eye"></i> Project Description...
+                        </h1>
+                        <p class="hidden project-description">Small description</p>
+                        <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                          <i class="fa-brands fa-github mr-1"></i> Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                      <div class="flex flex-col w-[60%] items-end justify-center">
+                        <img src="project-4.webp" alt="project 4" class="w-10/12 border-4 shadow-lg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- project 5 and 6 for big screen -->
+                <div class="flex justify-between gap-3 p-4">
+                  <div class="w-full p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col flex-1">
+                    <h2 class="bg-primary text-center p-2 text-lg w-full rounded-xl text-secondary">Project 3 Title</h2>
+                    <div class="flex mt-2">
+                      <div class="flex flex-col w-1/2 h-44 space-y-3 mr-2 ml-8">
+                        <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn">
+                          <i class="fa-regular fa-eye"></i> Project Description...
+                        </h1>
+                        <p class="hidden project-description">Small description</p>
+                        <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                          <i class="fa-brands fa-github mr-1"></i> Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                      <div class="flex flex-col w-[60%] items-end justify-center">
+                        <img src="project-5.webp" alt="project 3" class="w-10/12 border-4 shadow-lg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full p-2 mt-2 bg-white font-montserrat sm:flex sm:justify-between items-center rounded-2xl flex-col flex-1">
+                    <h2 class="bg-primary text-center p-2 text-lg w-full rounded-xl text-secondary">Project 4 Title</h2>
+                    <div class="flex mt-2">
+                      <div class="flex flex-col w-1/2 h-44 space-y-3 mr-2 ml-8">
+                        <h1 class="w-full bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-1 cursor-pointer description-btn">
+                          <i class="fa-regular fa-eye"></i> Project Description...
+                        </h1>
+                        <p class="hidden project-description">Small description</p>
+                        <a href="#" class="w-[70%] bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 mr-3">
+                          <i class="fa-brands fa-github mr-1"></i> Visit link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                      <div class="flex flex-col w-[60%] items-end justify-center">
+                        <img src="project-6.png" alt="project 4" class="w-10/12 border-4 shadow-lg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- contact section  -->
+            <!-- contact heading  -->
+        <section id="contact" class="bg-primary mt-3 ml-3 mr-3 sm:ml-14 sm:mr-14  rounded-xl p-2 mb-6">
+            <!-- About heading -->
+            <div class="flex justify-around md:justify-evenly items-center p-1 md:p-4 md:text-3xl">
+                <i class="fa-solid fa-circle-minus text-secondary"></i>
+                <h2 class="text-xl font-bold font-montserrat text-secondary md:text-3xl">Contacts</h2>
+                <i class="fa-solid fa-circle-minus text-secondary"></i>
+            </div>
+            <hr>
+            <!-- main div of form  -->
+            <div class="md:flex md:gap-4 md:items-center md:justify-center">
+                <div class=" md:flex-1">
+                   <!-- contact form  -->
+                   <form class="space-y font-montserrat p-9 m-5 bg-white rounded-lg"  action="https://formspree.io/f/mldryogo" method="POST" >
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name" class="block md:flex text-sm md:text-lg font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block md:flex w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block md:flex text-sm md:text-lg font-medium text-gray-700">Your Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block md:flex w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <!-- Subject Field -->
+                    <div>
+                        <label for="subject" class="block md:flex text-sm md:text-lg font-medium text-gray-700">Subject</label>
+                        <input type="text" id="subject" name="subject" required class="mt-1 block md:flex w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message" class="block md:flex text-sm md:text-lg font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block md:flex w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="w-[80%] md:w-44 bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary mt-3 space-x-5 sm:w-[35%]">
+                            Send Message
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                </form>
+                </div>
+                <!-- image and content used in side of form -->
+                 <div class="hidden md:flex flex-col flex-1 p-9 rounded-lg m-5 bg-gray-50 overflow-hidden">
+                    <!-- resume section -->
+                    <div class="flex justify-between bg-white w-full p-2  rounded-xl border-2 border-primary">
+                        <div>
+                            <h2 class="font-montserrat font-bold text-2xl text-secondary">See My</h2>
+                            <a href="#home"><h2 class="font-montserrat text-secondary cursor-pointer mt-4">Home</h2></a>
+                            <a href="#about"><h2 class="font-montserrat text-secondary cursor-pointer ml-4 mt-4">About</h2> </a>
+                        </div>
+                        <img src="cv image.jpg" alt="My image" class="h-44 w-44 object-cover object-top rounded-full border-primary border-4 ">
+                        <div>
+                            <h2 class="font-montserrat font-bold text-2xl text-secondary">Resume</h2>
+                            <a href="#projects"><h2 class="font-montserrat text-secondary cursor-pointer ml-8 mt-4">Projects</h2></a>
+                            <a href="#contact"><h2 class="font-montserrat text-secondary cursor-pointer ml-4 mt-4">Contact</h2></a>
+                        </div>
+                     </div> 
+                     <!-- small msg  -->
+                     <div class=" text-center font-montserrat">
+                        <h2 class="text-secondary font-semibold text-xl m-3">Krishna Dhami</h2>
+                        <p>Thank you for visiting my portfolio! Here is my CV for your reference. If you'd like to know more or get in touch, feel free to reach out. </p>
+                     </div>
+                     <!-- cv button  -->
+                    <div id="cv" class="w-[40%]  bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-primary hover:text-secondary  space-x-5 ml-auto mr-auto cursor-pointer sm:w-[30%] m-4">See My CV <i class="fa-solid fa-eye ml-1"></i></div>
+                    <hr>
+                    <!-- contact through social media -->
+                    <div class="flex gap-2 items-center justify-center">
+                        <h2 class="font-montserrat text-secondary text-sm p-2">Or Contact through Social Media</h2> 
+                        <i class="fa-solid fa-globe text-secondary"></i>
+                     </div>
+                     <!-- all social media links -->
+                     <div class="flex justify-between items-center w-full p-2 bg-white border-2 border-primary rounded-2xl gap-1">
+                        <div class="flex justify-center items-center gap-1 text-secondary w-full p-1 rounded-2xl">
+                             <i class="fa-brands fa-facebook text-4xl sm:text-2xl"></i>
+                             <a href="https://www.facebook.com/share/jkdrY5mokFTEGb2D/?mibextid=qi2Omg">Facebook</a>
+                        </div>
+                        <div class="flex justify-center items-center gap-1 text-secondary w-full p-1 rounded-2xl">
+                            <i class="fa-brands fa-square-instagram text-4xl sm:text-2xl"></i>
+                            <a href="https://www.instagram.com/krishnadhami_17?igsh=MTZuNjY4cG9kZ2M=">Instagaram</a>
+                        </div>
+                        <div class="flex justify-center items-center gap-1 text-secondary w-full p-1 rounded-2xl">
+                            <i class="fa-brands fa-linkedin text-4xl sm:text-2xl"></i>
+                            <a href="https://www.linkedin.com/in/krishna-dhami-a50105308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_ap">Linkedin</a>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+     </main>
+     <footer>
+        <!-- Resume  section-->
+        <section id="resume" class="bg-primary  ml-3 mr-3 sm:ml-14 sm:mr-14  flex justify-between rounded-xl p-2 mb-2 flex-col space-y-2 md:hidden">
+                <div class="flex justify-between bg-white w-full p-2 sm:p-4 rounded-xl">
+                    <div>
+                        <h2 class="font-montserrat font-bold text-2xl text-secondary">See My</h2>
+                        <a href="#home"><h2 class="font-montserrat text-secondary cursor-pointer mt-4">Home</h2></a>
+                        <a href="#about"><h2 class="font-montserrat text-secondary cursor-pointer ml-4 mt-4">About</h2> </a>
+                    </div>
+                    <img src="cv image.jpg" alt="My image" class="h-36 w-36 sm:h-44 sm:w-44 object-cover object-top rounded-full border-primary border-4 ">
+                    <div>
+                        <h2 class="font-montserrat font-bold text-2xl text-secondary">Resume</h2>
+                        <a href="#projects"><h2 class="font-montserrat text-secondary cursor-pointer ml-8 mt-4">Projects</h2></a>
+                        <a href="#contact"><h2 class="font-montserrat text-secondary cursor-pointer ml-4 mt-4">Contact</h2></a>
+                    </div>
+                 </div> 
+                 <!-- small msg  -->
+                 <div class=" text-center font-montserrat">
+                    <h2 class="text-secondary font-semibold text-xl">Krishna Dhami</h2>
+                    <p>Thank you for visiting my portfolio! Here is my CV for your reference. If you'd like to know more or get in touch, feel free to reach out. </p>
+                 </div>
+                 <!-- cv button  -->
+                <div id="cv" class="w-[40%] md:w-44 bg-secondary p-2 rounded-xl text-white text-center know-more-btn hover:bg-white hover:text-secondary  space-x-5 ml-auto mr-auto cursor-pointer sm:w-[30%]">See My CV <i class="fa-solid fa-eye ml-1"></i></div>
+                <hr>
+                <!-- contact through social media -->
+                <div class="flex gap-q items-center justify-center">
+                    <h2 class="font-montserrat text-secondary text-sm p-2">Or Contact through Social Media</h2> 
+                    <i class="fa-solid fa-globe text-secondary"></i>
+                 </div>
+                 <!-- all social media links -->
+                 <div class="flex sm:justify-between justify-center  items-center w-full sm:w-full sm:p-4 p-2 bg-white rounded-2xl gap-2">
+                    <div class="flex flex-col items-cente sm:bg-secondary sm:text-white text-secondary w-[20%] sm:w-1/2 p-1 rounded-2xl sm:flex-row sm:p-2 sm:gap-2 justify-center">
+                         <i class="fa-brands fa-facebook text-4xl sm:text-2xl"></i>
+                         <a href="https://www.facebook.com/share/jkdrY5mokFTEGb2D/?mibextid=qi2Omg" class="hidden sm:flex">Facebook</a>
+                    </div>
+                    <div class="flex flex-col items-center sm:bg-secondary sm:text-white text-secondary w-[20%] sm:w-1/2 p-1 rounded-2xl sm:flex-row sm:p-2 sm:gap-2 justify-center">
+                        <i class="fa-brands fa-square-instagram text-4xl sm:text-2xl"></i>
+                        <a href="https://www.instagram.com/krishnadhami_17?igsh=MTZuNjY4cG9kZ2M=" class="hidden sm:flex">Instagaram</a>
+                    </div>
+                    <div class="flex flex-col items-center sm:bg-secondary sm:text-white text-secondary w-[20%] sm:w-1/2 p-1 rounded-2xl sm:flex-row sm:p-2 sm:gap-2 justify-center">
+                        <i class="fa-brands fa-linkedin text-4xl sm:text-2xl"></i>
+                        <a href="https://www.linkedin.com/in/krishna-dhami-a50105308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_ap" class="hidden sm:flex">Linkedin</a>
+                    </div>
+                 </div>
+         </section>
+     </footer>
+</body>
+<!-- javascript link  -->
+<script src="script.js"></script>
+</html>
